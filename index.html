@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Abdelrahman Atef — Architectural Portfolio</title>
+<meta name="description" content="Abdelrahman Atef — architectural design and visualization portfolio. Selected works across Makkah, Riyadh, Muscat and Egypt with Dosor Studio.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800;900&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- Grain overlay -->
+<div class="grain" aria-hidden="true"></div>
+
+<!-- NAV -->
+<header class="nav" id="nav">
+  <a href="#top" class="nav__mark">A.<span>ATEF</span></a>
+  <nav class="nav__links" id="navLinks">
+    <a href="#work" data-idx="01">Work</a>
+    <a href="#about" data-idx="02">About</a>
+    <a href="#contact" data-idx="03">Contact</a>
+  </nav>
+  <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+    <span></span><span></span>
+  </button>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="top">
+  <div class="hero__slides" id="heroSlides" aria-hidden="true"></div>
+  <div class="hero__scrim"></div>
+  <div class="hero__grid" aria-hidden="true"></div>
+  <div class="hero__content">
+    <p class="eyebrow reveal">Selected Works — 2024–2026</p>
+    <h1 class="hero__title">
+      <span class="line reveal" style="--d:0">Architectural</span>
+      <span class="line reveal" style="--d:1">Portfolio</span>
+    </h1>
+    <div class="hero__rule reveal" style="--d:2"></div>
+    <p class="hero__byline reveal" style="--d:2">
+      Abdelrahman Atef — Architect &amp; Visualization Designer, Dosor&nbsp;Studio
+    </p>
+    <p class="hero__coords reveal mono" style="--d:3">MAKKAH · RIYADH · MUSCAT · CAIRO</p>
+  </div>
+  <a href="#work" class="hero__scroll" aria-label="Scroll to work">
+    <span>Scroll</span>
+    <i></i>
+  </a>
+</section>
+
+<!-- INTRO STRIP -->
+<section class="intro">
+  <p class="reveal">
+    Sixteen projects spanning high-density Gulf hospitality towers, adaptive-reuse athletics facilities,
+    landscape-led residential communities, AI-augmented visualization, full technical drawing sets and
+    academic studies — presented in the order they were built.
+  </p>
+</section>
+
+<!-- WORK -->
+<section class="work" id="work">
+  <div class="section-head reveal">
+    <span class="section-num mono">01</span>
+    <h2>Selected Work</h2>
+    <div class="section-rule"></div>
+  </div>
+
+  <div class="filters mono" id="filters">
+    <button class="filter is-active" data-filter="all">All Work</button>
+    <button class="filter" data-filter="urban">Urban &amp; Exterior Design</button>
+    <button class="filter" data-filter="landscape">Landscape &amp; Site Integration</button>
+    <button class="filter" data-filter="viz">Visualization &amp; AI Concepts</button>
+    <button class="filter" data-filter="studies">Studies &amp; Presentation</button>
+    <button class="filter" data-filter="technical">Technical Drawings</button>
+    <button class="filter" data-filter="academic">Academic Projects</button>
+  </div>
+
+  <div class="project-grid" id="projectGrid"></div>
+</section>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+  <div class="section-head reveal">
+    <span class="section-num mono">02</span>
+    <h2>About</h2>
+    <div class="section-rule"></div>
+  </div>
+
+  <div class="about__intro">
+    <div class="about__text reveal">
+      <p class="about__kicker mono">Hello there.</p>
+      <p class="about__bio">
+        I am an architect focused on creating designs that balance technical precision with clear,
+        thoughtful planning. My work centers on developing site-responsive projects that integrate
+        complex building systems with high-quality visual results.
+      </p>
+      <p class="about__bio">
+        I am passionate about using modern design tools and AI-driven workflows to bring efficient,
+        functional and immersive architectural visions to life — combining an architectural
+        background with a clean sense of graphic design so every project is presented at the
+        highest visual standard.
+      </p>
+    </div>
+  </div>
+
+  <!-- Skills -->
+  <div class="skills reveal" id="skillsPanel">
+    <div class="skills__col">
+      <span class="skills__label mono">Technical Skills</span>
+      <div class="skills__tags" id="skillsTechnical"></div>
+    </div>
+    <div class="skills__col">
+      <span class="skills__label mono">Design Skills</span>
+      <div class="skills__tags" id="skillsDesign"></div>
+    </div>
+    <div class="skills__col">
+      <span class="skills__label mono">Personal Skills</span>
+      <div class="skills__tags" id="skillsPersonal"></div>
+    </div>
+  </div>
+
+  <!-- Title block -->
+  <div class="titleblock reveal" id="titleblock">
+    <div class="titleblock__corner titleblock__corner--tl"></div>
+    <div class="titleblock__corner titleblock__corner--tr"></div>
+    <div class="titleblock__corner titleblock__corner--bl"></div>
+    <div class="titleblock__corner titleblock__corner--br"></div>
+
+    <div class="titleblock__row titleblock__row--head mono">
+      <span>Sheet</span><span>Credentials Index</span><span>Rev. 2026</span>
+    </div>
+
+    <div class="titleblock__grid" id="tbGrid"></div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<footer class="contact" id="contact">
+  <div class="section-head reveal">
+    <span class="section-num mono">03</span>
+    <h2>Contact</h2>
+    <div class="section-rule"></div>
+  </div>
+
+  <div class="contact__grid">
+    <div class="contact__lead reveal">
+      <p>Open to new collaborations, design roles and rendering commissions across the
+        region — get in touch.</p>
+    </div>
+    <div class="contact__details reveal">
+      <a class="contact__item" href="mailto:abdelrahmannsharkawy@gmail.com">
+        <span class="mono">Mail</span>
+        <strong>abdelrahmannsharkawy@gmail.com</strong>
+      </a>
+      <a class="contact__item" href="tel:+201272707007">
+        <span class="mono">Phone</span>
+        <strong>+20 127 270 7007</strong>
+      </a>
+      <div class="contact__item">
+        <span class="mono">Address</span>
+        <strong>6th of October City, Egypt</strong>
+      </div>
+    </div>
+  </div>
+
+  <div class="contact__base">
+    <span class="mono">© 2026 Abdelrahman Atef</span>
+    <span class="mono">Architecture · Visualization · Graphic Design</span>
+  </div>
+</footer>
+
+<!-- PROJECT MODAL -->
+<div class="modal" id="projectModal" aria-hidden="true">
+  <div class="modal__scrim" id="modalScrim"></div>
+  <div class="modal__panel" role="dialog" aria-modal="true">
+    <button class="modal__close" id="modalClose" aria-label="Close project">&times;</button>
+    <div class="modal__scroll" id="modalScroll"></div>
+  </div>
+</div>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox" aria-hidden="true">
+  <button class="lightbox__close" id="lightboxClose" aria-label="Close image">&times;</button>
+  <button class="lightbox__nav lightbox__nav--prev" id="lightboxPrev" aria-label="Previous image">&#8249;</button>
+  <img class="lightbox__img" id="lightboxImg" src="" alt="">
+  <button class="lightbox__nav lightbox__nav--next" id="lightboxNext" aria-label="Next image">&#8250;</button>
+  <span class="lightbox__count mono" id="lightboxCount"></span>
+</div>
+
+<script src="js/data.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
